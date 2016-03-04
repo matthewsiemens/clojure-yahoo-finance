@@ -1,14 +1,11 @@
 # yahoo-finance
 
-A Clojure library designed to ... well, that part is up to you.
+An easy to use Clojure library for querying with the Yahoo Finance API
 
 ## Usage
 
-FIXME
+Coming soon, not in Clojars yet.
 
 ## License
 
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License 1.0.
