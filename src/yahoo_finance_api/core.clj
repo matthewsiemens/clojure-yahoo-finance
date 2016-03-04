@@ -1,4 +1,4 @@
-(ns yahoo-finance.core
+(ns yahoo-finance-api.core
   (:require [clojure.string :as str]
             [clojure-csv.core :as csv]))
 
