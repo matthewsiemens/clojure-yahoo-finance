@@ -14,7 +14,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.3" level="project" />
-    <orderEntry type="library" name="Leiningen: clojure-csv:2.0.1" level="project" />
+    <orderEntry type="library" name="Leiningen: clojure-csv:2.0.2" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.7.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.10" level="project" />
   </component>
