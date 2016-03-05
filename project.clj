@@ -1,4 +1,4 @@
-(defproject yahoo-finance-api "0.1.2"
+(defproject yahoo-finance-api "0.1.3"
   :description "An easy to use Clojure library for querying with the Yahoo Finance API"
   :url "https://github.com/matthewsiemens/clojure-yahoo-finance"
   :license {:name "Eclipse Public License"
