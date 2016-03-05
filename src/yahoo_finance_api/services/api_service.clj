@@ -37,15 +37,23 @@
   (first (csv/parse-csv (slurp (build-api-call symbol (convert-keywords-to-api-params field-keys)))))
   )
 
-(defn get-type
-  [value]
-  (let [type (:type value)]
-    type)
+(defn get-fields-type
+  [field-keys]
+  (map :type (map api-field-mappings field-keys))
+  )
+
+(defn build-response
+  [api-response field-keys types]
+  (if (= "N/A" (first api-response))
+    {}
+    (zipmap field-keys (map formatter/format-value api-response types))
+    )
   )
 
 (defn get-stock-from-api
   [symbol field-keys]
-  (let [types (map get-type (map api-field-mappings field-keys))
+  (let [types (get-fields-type field-keys)
         api-response (get-response-from-api symbol field-keys)]
-    (zipmap field-keys (map formatter/format-value api-response types))
-    ))
+    (build-response api-response field-keys types)
+    )
+  )
