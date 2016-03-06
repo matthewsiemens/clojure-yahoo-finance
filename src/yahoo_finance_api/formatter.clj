@@ -1,4 +1,4 @@
-(ns yahoo-finance-api.services.formatter-service)
+(ns yahoo-finance-api.formatter)
 
 (defn format-numeric-value [field-value]
   (bigdec (.replaceAll field-value "[^0-9.]" "")))

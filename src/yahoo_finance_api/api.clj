@@ -1,7 +1,7 @@
-(ns yahoo-finance-api.services.api-service
+(ns yahoo-finance-api.api
   (:require [clojure.string :as str]
             [clojure-csv.core :as csv]
-            [yahoo-finance-api.services.formatter-service :as formatter]))
+            [yahoo-finance-api.formatter :as formatter]))
 
 (def api-uri
   "http://download.finance.yahoo.com/d/quotes.csv?s=%s&f=%s")
@@ -28,8 +28,8 @@
   )
 
 (defn build-api-call
-  [symbol fields]
-  (format api-uri symbol fields)
+  [symbol api-params]
+  (format api-uri symbol api-params)
   )
 
 (defn get-response-from-api
@@ -37,7 +37,7 @@
   (first (csv/parse-csv (slurp (build-api-call symbol (convert-keywords-to-api-params field-keys)))))
   )
 
-(defn get-fields-type
+(defn get-fields-types
   [field-keys]
   (map :type (map api-field-mappings field-keys))
   )
@@ -52,7 +52,7 @@
 
 (defn get-stock-from-api
   [symbol field-keys]
-  (let [types (get-fields-type field-keys)
+  (let [types (get-fields-types field-keys)
         api-response (get-response-from-api symbol field-keys)]
     (build-response api-response field-keys types)
     )
