@@ -1,5 +1,5 @@
 (ns yahoo-finance-api.core
-  (:require [yahoo-finance-api.api]))
+  (:require [yahoo-finance-api.api :as api]))
 
 (defn get-stock [symbol & field-keys]
   (if (not field-keys)

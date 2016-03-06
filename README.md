@@ -9,9 +9,9 @@ An easy to use Clojure library for querying with the Yahoo Finance API
 ```clojure
 
 ;; In project.clj:
-[yahoo-finance-api "0.1.4"]
+[yahoo-finance-api "0.1.5"]
 
-;; clojure-yahoo-finance v0.1.4 uses clojure-csv 2.0.2
+;; clojure-yahoo-finance v0.1.5 uses clojure-csv 2.0.2
 
 ;; In ns statement:
 (ns my.ns
