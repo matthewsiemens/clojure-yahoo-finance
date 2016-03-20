@@ -4,6 +4,7 @@ An easy to use Clojure library for querying with the Yahoo Finance API
 
 [![Build Status](https://travis-ci.org/matthewsiemens/clojure-yahoo-finance.svg?branch=master)](https://travis-ci.org/matthewsiemens/clojure-yahoo-finance)
 [![Dependency Status](https://www.versioneye.com/user/projects/56ea0ee04e714c003625c3c8/badge.svg)](https://www.versioneye.com/clojure/yahoo-finance-api:yahoo-finance-api/)
+[![Clojars Project](https://img.shields.io/clojars/v/yahoo-finance-api.svg)](https://clojars.org/yahoo-finance-api)
 
 ## Usage
 
