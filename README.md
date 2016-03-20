@@ -54,9 +54,10 @@ An easy to use Clojure library for querying with the Yahoo Finance API
 This library is very usable but still could use a little TLC. I'm hoping to have the following added shortly.
 
 - Allow getting more than one stock in a single request
-- Unit tests
 - Better error handling
 
 ## License
+
+Copyright © 2016 Matthew Siemens
 
 Distributed under the Eclipse Public License 1.0.
