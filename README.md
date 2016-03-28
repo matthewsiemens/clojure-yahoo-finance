@@ -60,4 +60,5 @@ This library is very usable but still could use a little TLC. I'm hoping to have
 
 Copyright © 2016 Matthew Siemens
 
-Distributed under the Eclipse Public License 1.0.
+Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.
