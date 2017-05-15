@@ -48,6 +48,16 @@ An easy to use Clojure library for querying with the Yahoo Finance API
 - :change-percent
 - :last-trade-date
 - :last-trade-time
+- :one-year-target-price
+- :52-week-low-price
+- :52-week-high-price
+- :volume
+- :last-trade-size
+- :market-cap-realtime
+- :shares-outstanding
+- :book-value
+- :ebitda
+- :pe-ratio-realtime
 
 ## ToDo
 
